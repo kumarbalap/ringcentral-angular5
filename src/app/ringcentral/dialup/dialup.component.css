@@ -1,0 +1,66 @@
+.rcDialPad {
+  width: 350px;
+  height: 580px;
+  background-color: #232323;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.rcInputCont {
+  width: 100%;
+  height: 60px;
+  background-color: #2D2D2D;
+  margin-top: 40px;
+}
+.rcInputCont input {
+  background-color: transparent;
+  width: 60%;
+  margin-left: 20%;
+  height: 60px;
+  border: none;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.rcInputCont input:focus {
+  outline: none;
+}
+.rcDialPad .rcDigits {
+  overflow: hidden;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+.rcDialPad .rcDigSpacer {
+  width: 60px;
+  margin: 10px calc(50% - 90px);
+  float: left;
+}
+.rcDialPad .rcDig {
+  color: white;
+  font-size: 30px;
+  float: left;
+  background-color: #2D2D2D;
+  text-align: center;
+  width: 60px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 10px 0px;
+  padding-top: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.rcDialPad .rcDig.clicked {
+  animation: pulse-gray linear 0.5s 1;
+}
+.rcDialPad .rcDig:nth-child(3n-1) {
+  margin: 10px calc(50% - 90px);
+}
+.rcDialPad .rcDig.rcAstrisk {
+  padding-top: 17px;
+  height: 43px;
+}

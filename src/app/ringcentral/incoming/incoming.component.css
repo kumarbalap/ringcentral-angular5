@@ -1,0 +1,30 @@
+.rcDlgCont {
+  position: absolute;
+  right: 310px;
+  bottom: 0;
+}
+.rcModal {
+  width: 280px;
+  height: 330px;
+  background-color: #232323;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rcIncomeCont button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.rcIncomeCont .btnGroup {
+  margin-left: 20px;
+}
+.rcIncomeCont .btnGroup:first-child {
+  margin-left: 0;
+}
+
+.rcModalBody {
+  padding-top: 50px;
+}

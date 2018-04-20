@@ -1,0 +1,27 @@
+
+<div class="rcDlgCont rcIncomeCont">
+    <video id="remoteVideo" hidden="hidden"></video>
+    <video id="localVideo" hidden="hidden" muted="muted"></video>
+
+    <div class="rcModal fade" tabindex="-1" role="dialog">
+        <div class="rcModalDialog rcIncomeDlg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <!--h4 class="modal-title">Incoming Call</h4-->
+                  </div>
+                  <div class="rcModalBody before-answer">
+                      <button class="btnGroup btn-success answer" (click)="answer()">
+                          <img src="app/ringcentral/assets/images/answer-48.png">
+                      </button>
+                      <button class="btnGroup btn-danger decline" (click)="decline()">
+                          <img src="app/ringcentral/assets/images/decline-48.png">
+                      </button>
+                      <button class="btnGroup btn-warning toVoicemail" (click)="toVoicemail()">
+                          <img src="app/ringcentral/assets/images/voicemail-48.png">
+                      </button>
+                  </div>
+                  <div class="modal-footer answered" style="display: none">Connecting...</div>
+            </div>
+        </div>
+    </div>
+</div>

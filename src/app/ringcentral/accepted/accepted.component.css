@@ -1,0 +1,61 @@
+.rcDlgCont {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+.rcModal {
+  width: 280px;
+  height: 330px;
+  background-color: #232323;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rcAcceptCont button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.rcBtn {
+  cursor: pointer;
+}
+
+.rcAcceptCont .btnGroup {
+  margin-left: 20px;
+}
+.rcAcceptCont .btnGroup:first-child {
+  margin-left: 0;
+}
+
+.rcModalHeader {
+  position: relative;
+}
+.rcAccClose {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 35px;
+}
+.rcModalHeader h4 {
+  text-align: left;
+  margin-left: 20px;
+  color: #FFF;
+}
+.rcModalHeader .rcVolCont {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.rcModalHeader .rcVolCont img {
+  width: 20px;
+}
+.rcModalHeader img:first-child {
+  margin-right: 10px;
+}
+
+.rcModalBody {
+  padding-top: 90px;
+}

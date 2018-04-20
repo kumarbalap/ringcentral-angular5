@@ -1,0 +1,54 @@
+
+<div *ngIf="showAccepted" class="rcDlgCont rcAcceptCont">
+    <div class="rcModal fade" tabindex="-1" role="dialog">
+        <div class="rcModalDialog modal-lg rcCallDlg">
+            <div class="modal-content">
+                <div class="rcModalHeader">
+                    <button type="button" class="rcAccClose" data-dismiss="modal" aria-label="Close" (click)="dlgClose()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!--h4 class="modal-title">Call In Progress</h4-->
+                    <div class="rcVolCont">
+                        <button class="rcBtn increase-volume" (click)="volumeUp()">
+                          <img src="app/ringcentral/assets/images/volume-up.png">
+                        </button>
+                        <button class="rcBtn decrease-volume" (click)="volumeDown()">
+                          <img src="app/ringcentral/assets/images/volume-down.png">
+                        </button>
+                    </div>
+                </div>
+                <div class="rcModalBody">
+                    <div class="btn-toolbar">
+                        <span class="btnGroup">
+                            <button *ngIf="showMute" class="rcBtn btnDefault mute" (click)="mute()">
+                              <img src="app/ringcentral/assets/images/mute.png">
+                            </button>
+                            <button *ngIf="!showMute" class="rcBtn btnDefault unmute" (click)="unmute()">
+                                <img src="app/ringcentral/assets/images/unmute.png">
+                            </button>
+                        </span>
+                        <span class="btnGroup">
+                            <button *ngIf="showHold" class="rcBtn btnDefault hold" (click)="hold()">
+                                <img src="app/ringcentral/assets/images/hold.png">
+                            </button>
+                            <button *ngIf="!showHold" class="rcBtn btnDefault unhold" (click)="unhold()">
+                                <img src="app/ringcentral/assets/images/unhold.png">
+                            </button>
+                        </span>
+                        <span class="btnGroup">
+                            <button class="rcBtn btnDefault park" (click)="park()">
+                                <img src="app/ringcentral/assets/images/park.png">
+                            </button>
+                        </span>
+                    </div>
+                    <pre class="acceptInfo">{{ acceptInfo }}</pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="rcBtn btn-danger hangup" (click)="hangup()">
+                      <img src="app/ringcentral/assets/images/hangup.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
